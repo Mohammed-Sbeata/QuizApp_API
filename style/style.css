@@ -1,0 +1,155 @@
+/* Variables */
+:root {
+  --primary-color: #0075ff;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.btn {
+  display: block;
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  background: var(--primary-color);
+}
+
+/* Quiz Style */
+.title-div {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 30px;
+}
+
+.select-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+.container {
+  max-width: 90%;
+  margin: auto;
+  padding: 0 15px;
+  display: none;
+}
+.container .category-Qcount-div {
+  padding-block: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .category-Qcount-div p {
+  font-weight: bold;
+}
+.container .category-Qcount-div p span {
+  color: var(--primary-color);
+}
+.container .questions-div {
+  color: #333;
+}
+.container .answers-div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 15px 0;
+}
+.container .answers-div .answer {
+  min-width: 80px;
+  cursor: pointer;
+  padding: 10px 15px;
+  width: fit-content;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.container .answers-div .answer.checked {
+  background: green;
+  color: #fff;
+  border-radius: 7px;
+  transform: translateX(25px);
+}
+.container #submit {
+  margin: 35px auto 0;
+}
+.final-result {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.final-result .rate{
+  color: #fff;
+  height: 100px;
+  width:100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.final-result .failed {
+  border: 10px solid #DC143C;
+}
+.final-result .failed i {
+  color: #DC143C;
+  font-weight: bold;
+  font-size: 60px;
+}
+.final-result .success{
+  border: 10px solid #00FF00;
+}
+.final-result .success i{
+  color: #00FF00;
+  font-weight: bold;
+  font-size: 60px;
+}
+.final-result .fin-result{
+  color: #333;
+  font-weight: bold;
+  font-size: 25px;  
+}
+.show {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+}
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  gap: 10px;
+}
+.card p {
+  text-align: center;
+  width: 33.3333%;
+}
+video {
+  display: none;
+  width: 900px;
+  padding: 10px;
+  margin: auto;
+}
+

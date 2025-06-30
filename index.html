@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <script src="https://kit.fontawesome.com/9a8ddb3d78.js" crossorigin="anonymous"></script>
+  <title>quiz App</title>
+</head>
+<body>
+  <section>
+    <div class="title-div">
+      <h1 class="title">Quiz app</h1>
+    </div>
+      <div class="select-div">
+        <button class="btn" id="programming">programming quiz</button>
+        <button class="btn" id="random">random quiz</button>
+      </div>
+    <div class="container">
+      <div class="category-Qcount-div">
+        <p class="category">category : <span id="questionsCategory"></span></p>
+        <p class="count">questions count : <span id="questionsCount"></span></p>
+      </div>
+      <div class="questions-div">
+        <h2 class="question"></h2>
+      </div>
+      <div class="answers-div">
+
+      </div>
+      <button class="btn" id="submit">submit answer</button>
+    </div>
+  </section>
+  <video controls loop>
+    <source src="video/fail.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="final-result">
+    <span class="rate"></span>
+    <p class="fin-result"></p>
+  </div>
+  <div class="show"></div>
+  <script src="script/main.js"></script>
+</body>
+</html>
